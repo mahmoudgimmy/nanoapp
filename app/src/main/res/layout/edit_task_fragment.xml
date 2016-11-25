@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent" android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    >
+
+    <EditText
+        android:layout_width="330dp"
+        android:layout_marginLeft="15dp"
+        android:layout_height="40dp"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:background="@drawable/edit_text_border"
+        android:id="@+id/edit_task_name"
+        android:hint="Task name"
+        style="@android:style/Widget.AutoCompleteTextView"
+        android:soundEffectsEnabled="false"
+        android:selectAllOnFocus="false"
+        android:layout_marginTop="31dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="13dp" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#D9E0D0"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        >
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity=""
+            android:layout_marginLeft="15dp"
+            android:text="Cancel"
+            android:background="?android:attr/selectableItemBackground"
+            android:id="@+id/button6"
+
+            android:layout_marginEnd="71dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity=""
+            android:layout_marginLeft="15dp"
+            android:text="Save"
+            android:id="@+id/button5"
+            android:background="?android:attr/selectableItemBackground"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity=""
+            android:layout_marginLeft="15dp"
+            android:text="Delete"
+            android:background="?android:attr/selectableItemBackground"
+            android:id="@+id/button7"
+
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true" />
+
+    </RelativeLayout>
+
+    <EditText
+        android:layout_width="330dp"
+        android:layout_marginLeft="15dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edit_text_border"
+        android:inputType="textMultiLine"
+        android:hint="Description"
+        android:ems="10"
+        android:id="@+id/edit_task_description"
+        android:layout_marginTop="44dp"
+        android:layout_below="@+id/edit_task_name"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+
+        android:layout_width="330dp"
+        android:layout_marginLeft="15dp"
+        android:layout_height="40dp"
+        android:inputType="date"
+        android:ems="10"
+        android:background="@drawable/edit_text_border"
+        android:id="@+id/edit_task_date"
+        android:hint="Task date"
+        style="@android:style/Widget.AutoCompleteTextView"
+        android:soundEffectsEnabled="false"
+        android:selectAllOnFocus="false"
+        android:layout_marginTop="40dp"
+        android:layout_below="@+id/edit_task_description"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>
