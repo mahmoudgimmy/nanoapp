@@ -34,7 +34,7 @@ public class Edit_Task_Fragment extends Fragment {
         final View rootview = inflater.inflate(R.layout.edit_task_fragment, container, false);
         taskHelper = new TaskHelper(getContext());
         contentValues = new ContentValues();
-
+        MainActivity.editable=false;
         ((EditText) rootview.findViewById(R.id.edit_task_name))
                 .setText(MainActivity.tasks.get(MainActivity.editableTaskPosition).name);
 
