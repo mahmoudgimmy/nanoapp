@@ -31,7 +31,7 @@ public class Add_Task_Fragment extends Fragment {
         final View rootview=inflater.inflate(R.layout.add_task_fragment,container,false);
         taskHelper = new TaskHelper(getContext());
         contentValues = new ContentValues();
-
+        MainActivity.editable=false;
         EditText date=(EditText) rootview.findViewById(R.id.add_task_date);
         date.setOnFocusChangeListener(new View.OnFocusChangeListener() {
             @Override
