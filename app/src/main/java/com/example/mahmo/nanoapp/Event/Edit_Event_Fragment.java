@@ -37,6 +37,7 @@ public class Edit_Event_Fragment extends Fragment {
 
         eventHelper = new EventHelper(getContext());
         contentValues = new ContentValues();
+        MainActivity.editable=false;
 
         ((EditText) rootview.findViewById(R.id.edit_event_name))
                 .setText(MainActivity.events.get(MainActivity.editableEventPosition).name);
