@@ -35,6 +35,7 @@ public class Add_Event_Fragment extends Fragment {
         final View rootview=inflater.inflate(R.layout.add_event_fragment,container,false);
         eventHelper = new EventHelper(getContext());
         contentValues = new ContentValues();
+        MainActivity.editable=false;
         EditText date=(EditText) rootview.findViewById(R.id.add_event_date);
         date.setOnFocusChangeListener(new View.OnFocusChangeListener() {
             @Override
